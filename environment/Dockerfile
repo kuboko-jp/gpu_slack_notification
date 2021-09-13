@@ -6,6 +6,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 WORKDIR /workspace
 
-COPY .. .
+COPY ../ .
 
 CMD [ "/bin/bash"]
