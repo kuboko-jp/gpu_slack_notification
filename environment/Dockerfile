@@ -4,8 +4,8 @@ WORKDIR /workspace/environment
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /workspace/secret
-COPY secret.yml ./
+RUN mkdir -p /workspace/secret
+COPY secret.yml /workspace/secret/
 
 WORKDIR /workspace
 CMD [ "/bin/bash" ]
