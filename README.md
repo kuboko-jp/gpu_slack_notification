@@ -15,7 +15,7 @@ docker build -t gpu_slack_notification:latest .
 ```Bash
 docker run -it --name gpu_slack_notification --gpus all gpu_slack_notification:latest
 ```
-## Set Webhook URI
+## Set Webhook URL
 https://slack.com/apps/A0F7XDUAZ--incoming-webhook-?tab=more_info
 - Add the "Webhook URL" obtained from the above site to /workspace/secret/secret.yml.
 ```yaml
