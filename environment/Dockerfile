@@ -5,4 +5,4 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 WORKDIR /workspace
-CMD [ "cp ./environment/secret.yml ./secret/secret.yml", "/bin/bash" ]
+CMD [ "/bin/bash", "cp /workspace/environment/secret.yml /workspace/secret/secret.yml"]
