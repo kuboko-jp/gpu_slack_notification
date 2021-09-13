@@ -1,0 +1,5 @@
+fire==0.4.0
+PyYAML==5.4.1
+six==1.16.0
+slackweb==1.0.5
+termcolor==1.1.0
