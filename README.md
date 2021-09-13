@@ -21,3 +21,10 @@ https://slack.com/apps/A0F7XDUAZ--incoming-webhook-?tab=more_info
 ```yaml
 SLACK_WEBHOOK_URL: 'https://hooks.slack.com/services/XXXXXXXXX/QQQQQQQQQQQQQQQQQQQ'
 ```
+# Usage
+- use_gpu_ids : GPU Index.
+- sleep_time_sec : Time interval to check the GPU operation.
+- job_name : Job name to be displayed when notifying Slack.
+```Bash
+python gpu_operation_check.py --use_gpu_ids="1,2,3,4,5,6,7" --sleep_time_sec=600 --job_name='job name'
+```
